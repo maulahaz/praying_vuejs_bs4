@@ -2,18 +2,23 @@
   <div id="app">
     <router-view/>
     <HelloWorld/>
+    <!-- <Home/>
+    <Contact/>
+    <About/>-->
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld";
-import Foo from "./components/Foo";
+// import Home from "./components/Home";
+// import Contact from "./components/Contact";
+// import About from "./components/About";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
-    Foo
+    HelloWorld
+    // Home, Contact, About
   }
 };
 </script>
