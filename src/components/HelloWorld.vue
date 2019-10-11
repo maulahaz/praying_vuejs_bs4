@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Ruwais Praying Time</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -16,21 +16,18 @@
       <ul class="navbar-nav">
         <li class="nav-item active">
           <router-link to="/home">
-            <span class="nav-link">Hoome</span>
+            <span class="nav-link">Home</span>
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/foo">
-            <span class="nav-link">Foo Link</span>
+          <router-link to="/contact">
+            <span class="nav-link">Contact</span>
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/foo">
-            <a class="nav-link">Pricing</a>
+          <router-link to="/about">
+            <a class="nav-link">About</a>
           </router-link>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
         </li>
       </ul>
     </div>
@@ -40,9 +37,7 @@
 <script>
 export default {
   name: "HelloWorld",
-  props: {
-    msg: String
-  }
+  props: {}
 };
 </script>
 

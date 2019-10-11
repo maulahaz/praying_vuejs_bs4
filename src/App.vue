@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-    <HelloWorld/>
+    <!-- <HelloWorld/> -->
     <!-- <Home/>
     <Contact/>
     <About/>-->
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+// import HelloWorld from "./components/HelloWorld";
 // import Home from "./components/Home";
 // import Contact from "./components/Contact";
 // import About from "./components/About";
@@ -17,7 +17,7 @@ import HelloWorld from "./components/HelloWorld";
 export default {
   name: "App",
   components: {
-    HelloWorld
+    // HelloWorld
     // Home, Contact, About
   }
 };
