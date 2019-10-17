@@ -1,16 +1,17 @@
 import Vue from "vue";
 import App from "./App.vue";
-import Router from "./router";
+import VueRouter from "vue-router";
+import routes from "./routes";
 
+Vue.use(VueRouter);
 Vue.config.productionTip = false;
 
-// new Vue({
-//   render: h => h(App)
-// }).$mount("#app");
+const router = new VueRouter({
+  routes: routes,
+  mode: "history"
+});
 
 new Vue({
-  el: "#app",
-  router: Router, // Router added to the Vue instance
-  components: { App },
-  template: "<App/>"
-});
+  router,
+  render: h => h(App)
+}).$mount("#app");
